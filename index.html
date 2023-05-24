@@ -5,6 +5,9 @@
     body {
       margin: 0;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     #video-background {
@@ -16,12 +19,29 @@
       object-fit: cover;
       z-index: -1;
     }
+
+    #text-container {
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 24px;
+    }
   </style>
+  <script>
+    function changePage() {
+      window.location.href = "nouvelle_page.html";
+    }
+  </script>
 </head>
 <body>
   <video id="video-background" autoplay loop muted>
     <source src="assets/video/main2.mp4" type="video/mp4">
   </video>
 
+  <div id="text-container" onclick="changePage()">
+    <span>Texte cliquable</span>
+  </div>
 </body>
 </html>
