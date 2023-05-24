@@ -8,6 +8,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
     }
 
     #video-background {
@@ -22,16 +23,20 @@
 
     #text-container {
       cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: transparent;
       padding: 20px;
-      border-radius: 5px;
       color: #fff;
-      font-size: 24px;
+      font-size: 4vw;
+      text-align: center;
+    }
+
+    #text-container span {
+      font-size: 75%; /* Réduction de la taille de police de 25% */
     }
   </style>
   <script>
     function changePage() {
-      window.location.href = "index.html.html";
+      window.location.href = "index.html";
     }
   </script>
 </head>
