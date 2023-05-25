@@ -1,52 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    #video-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    #text-container {
-      cursor: pointer;
-      background-color: transparent;
-      padding: 20px;
-      color: #fff;
-      font-size: 4vw;
-      text-align: center;
-    }
-
-    #text-container span {
-      font-size: 75%; /* Réduction de la taille de police de 25% */
-    }
-  </style>
-  <script>
-    function changePage() {
-      window.location.href = "index.html";
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    
 </head>
 <body>
-  <video id="video-background" autoplay loop muted>
-    <source src="assets/video/main2.mp4" type="video/mp4">
-  </video>
-
-  <div id="text-container" onclick="changePage()">
-    <span>Start</span>
-  </div>
+    <video id="video-background" autoplay loop muted>
+        <source src="assets/video/main2.mp4" type="video/mp4">
+      </video>
+    
+      <div id="text-container" onclick="changePage()">
+        <span>Start</span>
+      </div>
+    
+      <div class="part2">
+        <header>
+          <h3>Nice and Good</h3>
+        </header>
+        <aside>
+          <div class="knucks">
+    
+          </div>
+        </aside>
+      </div>
+    
 </body>
 </html>
